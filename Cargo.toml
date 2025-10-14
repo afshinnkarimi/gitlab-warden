@@ -1,0 +1,13 @@
+[package]
+name = "gitlab-warden"
+version = "0.1.0"
+edition = "2024"
+authors = ["Afshin Karimi afshinnkarimi@gmail.com>"]
+description = "🛡️ A Rust-powered watchdog that monitors GitLab access tokens, tracks expiration dates, and notifies before they expire."
+license = "MIT"
+repository = "https://github.com/afshinnkarimi/gitlab-warden"
+readme = "README.md"
+
+[dependencies]
+prometheus = "0.14.0"
+tokio = { version = "1.47.1", features = ["macros", "rt-multi-thread"] }
