@@ -1,18 +1,13 @@
-use std::vec::Vec;
+mod config;
 
-struct Token {
-    id: i32,
-    name: String,
-    revoced: bool,
-    created_at: String,
-    scopes: Vec<String>,
-    user_id: i32,
-    last_used_at: String,
-    active: bool,
-    expires_at: String
-}
+use config::Config;
 
 fn main() {
+    let path = "config.yaml";
+
+    let config = Config::from_file(path).unwrap();
+
+    println!("The address is {}", config.server);
 
 }
 
