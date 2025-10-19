@@ -5,6 +5,7 @@ use std::{fs::File, io, path::Path};
 #[derive(Debug, Deserialize)]
 pub struct Config {
     pub server: String,
+    pub token: String,
 }
 
 impl Config {

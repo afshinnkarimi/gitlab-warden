@@ -34,4 +34,6 @@ CI/CD pipeline health assurance
 
 🔧 Configuration
 
-Set your environment variables in a .env file:
+Set your environment variables in a config file:
+server: "your-gitlab-instance"
+token: "your-access-token"
